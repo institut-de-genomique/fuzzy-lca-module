@@ -4,6 +4,17 @@ Module dedicated to compute the LCA for a read assigned to several taxons. It co
 
 It uses JDK 1.6 and Maven 3.2.x
 
+## Compilation
+
+```bash
+git clone https://github.com/institut-de-genomique/fuzzy-lca-module.git
+cd fuzzy-lca-module
+mvn clean
+mvn install -DskipTests
+```
+
+
+
 ## Basic usage LCA topdown simple
 
 ```bash
