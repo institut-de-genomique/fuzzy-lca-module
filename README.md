@@ -7,18 +7,18 @@ It uses JDK 1.6 and Maven 3.2.x
 ## Basic usage LCA topdown simple
 
 ```bash
-java -jar lca-3.0-SNAPSHOT-lca.jar -mLca -r 0.9 -it /home/flefevre/1391590300970-taxointervals.txt -il ./src/test/resources/testfuzzyWeigthed.inlca -o ~/Téléchargements/result.txt
+java -jar fuzzy-lca-module-3.0-lca.jar -mLca -r 0.9 -it 1391590300970-taxointervals.txt -il ./src/test/resources/testfuzzyWeigthed.inlca -o ~/Téléchargements/result.txt
 ```
 
 ## Generation of input file directly from NCBI nodes.dmp file
 
 ```bash
-java -jar target/lca-3.0-SNAPSHOT-lca.jar -taskIntervals -nodesDmpFilePath /Téléchargements/taxdump_latest/nodes.dmp -outputDir4IntervalTaxo ~/Téléchargements/
+java -jar target/fuzzy-lca-module-3.0-lca.jar -taskIntervals -nodesDmpFilePath /Téléchargements/taxdump_latest/nodes.dmp -outputDir4IntervalTaxo ~/Téléchargements/
 ```
 
 ## LCA topdown parralelize with 4 threads
 ```bash
-java -jar target/lca-3.0-SNAPSHOT-lca.jar -ftdpLca -w 4 -r 0.9 -it /home/flefevre/1391590300970-taxointervals.txt -il ./src/test/resources/testfuzzyWeigthed.inlca -o ~/Téléchargements/result.txt
+java -jar target/fuzzy-lca-module-3.0-lca.jar -ftdpLca -w 4 -r 0.9 -it 1391590300970-taxointervals.txt -il ./src/test/resources/testfuzzyWeigthed.inlca -o ~/Téléchargements/result.txt
 ```
 
 Kind of results:
