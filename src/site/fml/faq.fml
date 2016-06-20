@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+  title="Frequently Asked Questions"
+  toplink="false">
+
+ <part id="usage">
+    <title>Devlopment</title>
+
+    <faq id="svn">
+      <question>
+        How to use?
+      </question>
+
+      <answer>
+        <p>download the jar
+
+chmod 777 /env/cns/tmp/lca-2.0-lca.jar
+java -jar lca-2.0-lca.jar -mLca -il /env/export/nfs1/home/flefevre/newhome/programs/workspaces-indigo/w_sbwhh6/sbwh6-project/sbwh6-modules/lca/src/test/resources/readsWithTaxonsMapped.txt -r 0.2 -o test.lca
+
+-il inputfile
+-r ratio
+-o outputfile
+
+la taxonomy est incluse dans le jar 8Mo
+
+format fichier resultat
+#=diff entre lca et mlca
+-=pas de diff
+
+[#/-][readid]\t[LCA TaxonId]@[LCA Level]\t[MLCA taxonId]@[MLCA Level],[MLCA taxonId]@[MLCA Level],
+
+
+
+#1111111::1    2037@7    1716@10
+-7120388::1    1037911@11    1037911@11
+-1112073::1    216595@11    216595@11
+#6777531::1    286@8    136843@9
+-1048951::1    1114970@11    1114970@11
+-3312348::1    29158@19    29158@19
+-6107997::1    216595@11    216595@11
+-6244415::1    205922@11    205922@11
+-6082781::1    205922@11    205922@11
+-5720843::1    303@10    303@10
+-3915947::1    216595@11    216595@11</p>
+      </answer>
+    </faq>
+
+  </part>
+
+</faqs>

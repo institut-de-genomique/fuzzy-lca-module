@@ -1,0 +1,27 @@
+<assembly>
+	<id>lca</id>
+
+	<formats>
+		<format>jar</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<dependencySets>
+		<dependencySet>
+			<unpack>true</unpack>
+			<!-- scope>runtime</scope--><!-- >scope>compile</scope -->
+			<scope>runtime</scope>
+		</dependencySet>
+	</dependencySets>
+	<files>
+		<file>
+			<source>${project.build.outputDirectory}/../../src/main/resources/ehcache.xml
+			</source>
+			<outputDirectory>/</outputDirectory>
+		</file>
+	<file>
+			<source>${project.build.outputDirectory}/../../src/main/resources/log4j.xml
+			</source>
+			<outputDirectory>/</outputDirectory>
+		</file>
+	</files>
+</assembly>
