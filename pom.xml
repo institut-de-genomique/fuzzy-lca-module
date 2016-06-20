@@ -10,10 +10,10 @@
 <!-- 	</parent> -->
 	<groupId>fr.cea.genoscope.labgem</groupId>
 	<version>3.0</version>
-	<artifactId>fuzzy-lca</artifactId>
+	<artifactId>fuzzy-lca-module</artifactId>
 
 	<packaging>jar</packaging>
-	<name>Fuzzy LCA</name>
+	<name>Fuzzy LCA Module</name>
 	<description>Module dedicated to LCA algorithms and taxonomy management.</description>
 
 	<inceptionYear>2011</inceptionYear>
